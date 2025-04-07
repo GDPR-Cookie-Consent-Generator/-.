@@ -140,12 +140,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
       <footer className="bg-gray-100 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 py-6">
         <div className="container mx-auto px-4">
           <div className="mb-6">
-            <div className="ads-banner">
-              <p className="text-sm font-medium mb-2">ADVERTISEMENT</p>
-              <div className="bg-gray-200 dark:bg-gray-700 h-16 flex items-center justify-center">
-                <p className="text-sm text-gray-500 dark:text-gray-400">Ad Space - 728x90</p>
-              </div>
-            </div>
+            <div className="ad-space h-20 w-full bg-gray-200 dark:bg-gray-800"></div>
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 md:mb-0">
