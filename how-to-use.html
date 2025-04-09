@@ -7,7 +7,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>How to Use - GDPR Cookie Consent Generator</title>
-    <meta name="description" content="Learn how to use the GDPR Cookie Consent Generator to create and implement cookie banners for your website." />
+    <meta name="description" content="Learn how to use the GDPR Cookie Consent Generator tool to create and implement a compliant cookie banner." />
     <meta name="author" content="John" />
     
     <link rel="stylesheet" href="css/styles.css">
@@ -43,114 +43,130 @@
 
       <!-- Main Content -->
       <main>
-        <section class="page-content how-to-use-page">
+        <section class="page-content howto-page">
           <h1>How to Use the GDPR Cookie Consent Generator</h1>
           
-          <div class="how-to-use-content">
-            <p>Creating and implementing a GDPR-compliant cookie consent banner for your website is simple with our generator. Follow these easy steps:</p>
+          <p>Our cookie consent generator is designed to be straightforward and easy to use. Follow these simple steps to create and implement a GDPR-compliant cookie banner for your website.</p>
+          
+          <div class="steps-container">
+            <div class="step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h3>Customize Your Banner</h3>
+                <p>On the homepage, scroll down to the "Customize Your Cookie Consent Banner" section. Adjust the following settings to match your website's needs and design:</p>
+                <ul>
+                  <li><strong>Banner Position:</strong> Choose whether your banner appears at the top or bottom of your website.</li>
+                  <li><strong>Background Color:</strong> Select a color that complements your website's design.</li>
+                  <li><strong>Text Color:</strong> Choose a color that ensures text remains readable against your selected background.</li>
+                  <li><strong>Button Text:</strong> Customize the text for your "Accept" and "Reject" buttons.</li>
+                  <li><strong>Privacy Policy URL:</strong> Add the URL to your privacy policy page.</li>
+                  <li><strong>Banner Text:</strong> Edit the message displayed to visitors about your cookie usage.</li>
+                </ul>
+                <p>As you make changes, the live preview will update automatically so you can see exactly how your banner will look.</p>
+              </div>
+            </div>
             
-            <div class="steps-container">
-              <div class="step">
-                <div class="step-number">1</div>
-                <div class="step-content">
-                  <h3>Customize Your Banner</h3>
-                  <p>Use the customization options on our homepage to design your cookie consent banner:</p>
-                  <ul>
-                    <li><strong>Banner Position:</strong> Choose whether your banner appears at the top or bottom of your website.</li>
-                    <li><strong>Background Color:</strong> Select a background color that matches your website's design.</li>
-                    <li><strong>Text Color:</strong> Choose a text color that provides good contrast with your background.</li>
-                    <li><strong>Button Text:</strong> Customize the text for your Accept and Reject buttons.</li>
-                    <li><strong>Privacy Policy URL:</strong> Add the link to your privacy policy page.</li>
-                    <li><strong>Banner Text:</strong> Modify the text that explains your cookie usage to visitors.</li>
-                  </ul>
-                  <p>As you make changes, the live preview will update to show you exactly how your banner will look.</p>
-                </div>
+            <div class="step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h3>Generate Your Code</h3>
+                <p>Once you're satisfied with your banner's appearance and content, click the "Generate Code" button. This will create the HTML, CSS, and JavaScript code needed to implement your cookie consent banner.</p>
+                <p>The generated code will appear in the box below the button. It includes everything needed to:</p>
+                <ul>
+                  <li>Display your customized banner</li>
+                  <li>Store the user's consent choice in a cookie</li>
+                  <li>Hide the banner once the user has made a choice</li>
+                  <li>Respect the user's previous choice when they return to your site</li>
+                </ul>
               </div>
-              
-              <div class="step">
-                <div class="step-number">2</div>
-                <div class="step-content">
-                  <h3>Generate Your Code</h3>
-                  <p>Once you're happy with your design:</p>
-                  <ol>
-                    <li>Click the "Generate Code" button.</li>
-                    <li>Review the generated HTML and JavaScript code.</li>
-                    <li>Click "Copy to Clipboard" to copy the code.</li>
-                  </ol>
-                </div>
+            </div>
+            
+            <div class="step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h3>Copy the Code</h3>
+                <p>Click the "Copy to Clipboard" button to copy all the generated code. A confirmation message will appear once the code has been successfully copied.</p>
               </div>
-              
-              <div class="step">
-                <div class="step-number">3</div>
-                <div class="step-content">
-                  <h3>Implement on Your Website</h3>
-                  <p>To add the cookie consent banner to your website:</p>
-                  <ol>
-                    <li>Access your website's HTML files (through your CMS, hosting provider, or FTP).</li>
-                    <li>Paste the code before the closing <code>&lt;/body&gt;</code> tag on every page where you want the banner to appear.</li>
-                    <li>Save your changes and publish or upload the updated files.</li>
-                  </ol>
-                  <div class="code-example">
-                    <p>Your HTML structure should look something like this:</p>
-                    <pre><code>&lt;html&gt;
+            </div>
+            
+            <div class="step">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h3>Implement the Code on Your Website</h3>
+                <p>The final step is to add the code to your website:</p>
+                <ol>
+                  <li>Access your website's HTML code (through your CMS, website builder, or by directly editing your HTML files).</li>
+                  <li>Paste the copied code just before the closing <code>&lt;/body&gt;</code> tag of your website.</li>
+                </ol>
+                <p>Here's an example of where the code should be placed:</p>
+                <div class="code-example">
+                  <pre>&lt;html&gt;
   &lt;head&gt;
-    &lt;!-- Your existing head content --&gt;
+    &lt;!-- Your head content --&gt;
   &lt;/head&gt;
   &lt;body&gt;
     &lt;!-- Your website content --&gt;
     
-    &lt;!-- Paste the generated code here --&gt;
-    &lt;div id="gdpr-cookie-consent"&gt;...&lt;/div&gt;
-    &lt;script&gt;...&lt;/script&gt;
+    <strong>&lt;!-- Paste the generated cookie consent code here --&gt;</strong>
   &lt;/body&gt;
-&lt;/html&gt;</code></pre>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="step">
-                <div class="step-number">4</div>
-                <div class="step-content">
-                  <h3>Test Your Banner</h3>
-                  <p>After implementation:</p>
-                  <ol>
-                    <li>Visit your website in different browsers and devices to ensure the banner displays correctly.</li>
-                    <li>Test the Accept and Reject buttons to verify they work as expected.</li>
-                    <li>Check that the "Learn more" link directs users to your privacy policy page.</li>
-                  </ol>
-                  <p>The cookie consent banner should appear when a new visitor accesses your site and disappear once they accept or reject cookies.</p>
+&lt;/html&gt;</pre>
                 </div>
               </div>
             </div>
             
-            <div class="faq-section">
-              <h2>Frequently Asked Questions</h2>
-              
-              <div class="faq-item">
-                <h3>Does this make my website fully GDPR compliant?</h3>
-                <p>The cookie consent banner is just one aspect of GDPR compliance. Full compliance involves several other measures, including having a comprehensive privacy policy, proper data processing agreements, and appropriate data handling practices. We recommend consulting with a legal professional for complete GDPR compliance advice.</p>
-              </div>
-              
-              <div class="faq-item">
-                <h3>Will this work with any website?</h3>
-                <p>Yes, our generated code is designed to work with any HTML website. It uses vanilla JavaScript and should be compatible with most modern websites, including those built with WordPress, Shopify, Wix, and other platforms.</p>
-              </div>
-              
-              <div class="faq-item">
-                <h3>How does the cookie consent actually work?</h3>
-                <p>When a user clicks "Accept," the script sets a cookie in their browser recording their consent. When they click "Reject," it sets a different cookie recording their rejection. These cookies are then used to determine whether to load optional cookies/trackers in the future. The banner will not show again to users who have already made a choice.</p>
-              </div>
-              
-              <div class="faq-item">
-                <h3>Can I modify the code after generating it?</h3>
-                <p>Absolutely! The generated code is provided as a starting point. You're free to modify it to better suit your needs or to add additional functionality. Just make sure any changes maintain GDPR compliance.</p>
-              </div>
-              
-              <div class="faq-item">
-                <h3>I need more help. What should I do?</h3>
-                <p>If you need assistance implementing the code or have other questions, feel free to contact us at <a href="mailto:support@gdprcookieconsentgenerator.com">support@gdprcookieconsentgenerator.com</a>. For legal advice regarding GDPR compliance, please consult with a qualified legal professional.</p>
+            <div class="step">
+              <div class="step-number">5</div>
+              <div class="step-content">
+                <h3>Test Your Implementation</h3>
+                <p>After adding the code to your website, visit your site in a browser and check that:</p>
+                <ul>
+                  <li>The cookie banner appears correctly</li>
+                  <li>The "Accept" and "Reject" buttons work as expected</li>
+                  <li>The banner disappears after making a choice</li>
+                  <li>The banner doesn't reappear when you refresh the page (as your choice is now stored in a cookie)</li>
+                </ul>
+                <p>If you want to test the banner again, you'll need to clear your browser cookies for your website.</p>
               </div>
             </div>
+          </div>
+          
+          <h2>Frequently Asked Questions</h2>
+          
+          <div class="faq-container">
+            <div class="faq-item">
+              <h3>Is this banner fully GDPR compliant?</h3>
+              <p>Our generator creates a basic cookie consent mechanism that helps with GDPR compliance. However, full GDPR compliance involves many aspects of your website and business operations. For comprehensive compliance, consult with a legal professional specializing in data protection.</p>
+            </div>
+            
+            <div class="faq-item">
+              <h3>Will this banner affect my website's performance?</h3>
+              <p>No, the generated code is lightweight and optimized for performance. It doesn't rely on any external libraries and has minimal impact on your website's loading time.</p>
+            </div>
+            
+            <div class="faq-item">
+              <h3>Can I further customize the banner after generating the code?</h3>
+              <p>Yes! The generated code can be modified to fit your specific needs. If you have HTML and CSS knowledge, you can adjust the styling, positioning, and behavior of the banner by editing the code.</p>
+            </div>
+            
+            <div class="faq-item">
+              <h3>What happens when a user clicks "Reject"?</h3>
+              <p>When a user clicks "Reject," the banner sets a cookie recording their preference and then disappears. The provided code includes a placeholder in the JavaScript where you can add your own logic to disable non-essential cookies or tracking scripts when users reject cookies.</p>
+            </div>
+            
+            <div class="faq-item">
+              <h3>How long does the user's choice last?</h3>
+              <p>By default, the cookie storing the user's consent choice expires after 6 months. You can modify this duration by editing the expiry date in the JavaScript code.</p>
+            </div>
+            
+            <div class="faq-item">
+              <h3>Does this work with Content Management Systems (CMS) like WordPress?</h3>
+              <p>Yes, the generated code can be added to any HTML-based website, including sites built with WordPress, Wix, Squarespace, and other popular CMS platforms. For WordPress specifically, you can add the code to your theme's footer.php file or use a plugin that allows custom HTML/JavaScript insertion.</p>
+            </div>
+          </div>
+          
+          <div class="need-help">
+            <h2>Need Additional Help?</h2>
+            <p>If you're having trouble implementing the code or have questions about using our tool, feel free to contact me at <a href="mailto:support@gdprcookieconsentgenerator.com">support@gdprcookieconsentgenerator.com</a>. I'm happy to help!</p>
           </div>
         </section>
         
