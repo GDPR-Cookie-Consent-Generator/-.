@@ -19,14 +19,180 @@
     <meta name="twitter:site" content="@lovable_dev" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
     
-    <!-- Google AdSense placeholder - Replace with your actual AdSense code -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   </head>
 
   <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <div class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo">
+          <h1>GDPR Cookie Consent Generator</h1>
+        </div>
+        <div class="theme-toggle" id="themeToggle">
+          <i class="fas fa-moon dark-icon"></i>
+          <i class="fas fa-sun light-icon"></i>
+        </div>
+      </header>
+
+      <!-- Navigation -->
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="terms.html">Terms and Conditions</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="how-to-use.html">How to Use</a></li>
+        </ul>
+      </nav>
+
+      <!-- Main Content -->
+      <main>
+        <section class="hero">
+          <h1>Generate GDPR Cookie Consent Code in 30 Seconds – Free & No Signup!</h1>
+          <p>Create professional, compliant cookie consent banners for your website in seconds. No registration required.</p>
+          <div class="features">
+            <ul>
+              <li><i class="fas fa-check"></i> Customize colors, text, and banner position</li>
+              <li><i class="fas fa-check"></i> One-click copy code</li>
+              <li><i class="fas fa-check"></i> No ads until code generation</li>
+              <li><i class="fas fa-check"></i> GDPR compliant solution</li>
+            </ul>
+          </div>
+          <button class="cta-button" id="scrollToGenerator">Start Now →</button>
+        </section>
+
+        <!-- Ad Space (Top) -->
+        <div class="ad-container top-ad">
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-2242564423799114"
+               data-ad-slot="1234567890"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <script>
+               (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+
+        <!-- Generator Section -->
+        <section class="generator" id="generator">
+          <h2>Customize Your Cookie Consent Banner</h2>
+          <div class="generator-content">
+            <div class="customization-options">
+              <div class="option-group">
+                <label for="bannerPosition">Banner Position:</label>
+                <select id="bannerPosition">
+                  <option value="bottom">Bottom</option>
+                  <option value="top">Top</option>
+                </select>
+              </div>
+              
+              <div class="option-group">
+                <label for="backgroundColor">Background Color:</label>
+                <input type="color" id="backgroundColor" value="#333333">
+              </div>
+              
+              <div class="option-group">
+                <label for="textColor">Text Color:</label>
+                <input type="color" id="textColor" value="#FFFFFF">
+              </div>
+              
+              <div class="option-group">
+                <label for="acceptButtonText">Accept Button Text:</label>
+                <input type="text" id="acceptButtonText" value="Accept">
+              </div>
+              
+              <div class="option-group">
+                <label for="rejectButtonText">Reject Button Text:</label>
+                <input type="text" id="rejectButtonText" value="Reject">
+              </div>
+              
+              <div class="option-group">
+                <label for="privacyPolicyURL">Privacy Policy URL:</label>
+                <input type="url" id="privacyPolicyURL" value="#" placeholder="https://yourdomain.com/privacy">
+              </div>
+              
+              <div class="option-group">
+                <label for="bannerText">Banner Text:</label>
+                <textarea id="bannerText">We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</textarea>
+              </div>
+            </div>
+            
+            <div class="preview-container">
+              <h3>Live Preview</h3>
+              <div class="cookie-consent-preview" id="previewContainer">
+                <div id="previewBanner" class="preview-banner bottom">
+                  <p id="previewText">We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p>
+                  <div class="preview-buttons">
+                    <button id="previewAcceptButton" class="preview-button accept">Accept</button>
+                    <button id="previewRejectButton" class="preview-button reject">Reject</button>
+                    <a id="previewPrivacyLink" href="#" class="preview-link">Learn more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Code Generation Section -->
+          <div class="code-generation">
+            <h3>Your Cookie Consent Code</h3>
+            <pre class="code-container"><code id="generatedCode">/* Click "Generate Code" to create your cookie consent code */</code></pre>
+            <div class="code-buttons">
+              <button id="generateCodeBtn" class="primary-button">Generate Code</button>
+              <button id="copyCodeBtn" class="secondary-button" disabled>Copy to Clipboard</button>
+            </div>
+            <div id="copySuccess" class="copy-success hidden">Code copied to clipboard! ✅</div>
+            <div class="instructions">
+              <h4>How to implement:</h4>
+              <ol>
+                <li>Copy the generated code.</li>
+                <li>Paste it before the closing <code>&lt;/body&gt;</code> tag of your website.</li>
+                <li>That's it! Your GDPR-compliant cookie consent banner is now active.</li>
+              </ol>
+              <p>Need help? Check our <a href="how-to-use.html">implementation guide</a>.</p>
+            </div>
+          </div>
+        </section>
+        
+        <!-- Ad Space (Bottom) -->
+        <div class="ad-container bottom-ad">
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-2242564423799114"
+               data-ad-slot="0987654321"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <script>
+               (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-content">
+          <div class="footer-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="terms.html">Terms</a></li>
+              <li><a href="privacy.html">Privacy</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="how-to-use.html">How to Use</a></li>
+            </ul>
+          </div>
+          <div class="copyright">
+            <p>&copy; 2025 GDPR Cookie Consent Generator. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
   </body>
 </html>
